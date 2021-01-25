@@ -10,9 +10,14 @@ $(document).ready(function() {
     return letters.split("").reverse().join("");
   };
   
-  function output(letters) {
-    return userSentence + lastFirst(letters) +".";
+  function countDivide(sentence) {
+    const index = Math.floor(userSentence.length / 2)
+    return userSentence[index];
   }
+
+  function output(letters) {
+    return countDivide(userSentence) + userSentence + lastFirst(letters) +".";
+  };
 
   console.log(output(firstLast));
 
