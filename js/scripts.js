@@ -19,12 +19,10 @@ $(document).ready(function() {
     return reverse(countDivide(userSentence) + userSentence + reverse(letters) +".");
   };
 
-  console.log(output(firstLast));
-
-$("#original").click(function() {
-  alert(userSentence);
-});
-$("#cipher")
-
-
+  $("#original").click(function() {
+    alert(userSentence);
+  });
+  $("#cipher").click(function() {
+    alert(output(firstLast));
+  })
 });
