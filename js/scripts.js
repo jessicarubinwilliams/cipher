@@ -6,7 +6,7 @@ $(document).ready(function() {
   };
   const firstLast = firstLastCapitalize(userSentence);
   
-  function lastFirst(letters) {
+  function reverse(letters) {
     return letters.split("").reverse().join("");
   };
   
@@ -16,7 +16,7 @@ $(document).ready(function() {
   }
 
   function output(letters) {
-    return countDivide(userSentence) + userSentence + lastFirst(letters) +".";
+    return reverse(countDivide(userSentence) + userSentence + reverse(letters) +".");
   };
 
   console.log(output(firstLast));
