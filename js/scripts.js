@@ -11,7 +11,7 @@ $(document).ready(function() {
   };
   
   function output(letters) {
-    return lastFirst(letters);
+    return userSentence + lastFirst(letters) +".";
   }
 
   console.log(output(firstLast));
