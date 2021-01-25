@@ -21,4 +21,10 @@ $(document).ready(function() {
 
   console.log(output(firstLast));
 
+$("#original").click(function() {
+  alert(userSentence);
+});
+$("#cipher")
+
+
 });
